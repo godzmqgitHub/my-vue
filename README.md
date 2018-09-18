@@ -1,6 +1,6 @@
 # my-vue
 
-> my app
+> 初试vue，简单语法
 
 ## Build Setup
 
