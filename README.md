@@ -1,6 +1,6 @@
 # my-vue
 
-> 初试vue，简单语法
+> 初试vue-cli，简单语法
 
 ## Build Setup
 

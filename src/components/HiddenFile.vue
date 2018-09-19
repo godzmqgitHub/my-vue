@@ -2,11 +2,8 @@
 <!-- 每个模板只支持一个元素 -->
 <div class="wrap">
   <ul class="tab_bar">
-    <li>
-      <router-link to="foo">初建项目</router-link>
-    </li>
-    <li>
-      <router-link to="bar">计算属性2</router-link>
+    <li v-for="item in routList" :class="{'nav-color': routPath===item.path}">
+      <router-link :to="item.path">{{item.name}}</router-link>
     </li>
   </ul>
   <div class="content">
@@ -20,7 +17,21 @@ export default {
   name: 'HiddenFile',
   data () {
     return {
-      
+      routList: [{
+        name: '初建项目',
+        path: 'foo'
+      },{
+        name: '计算属性',
+        path: 'computed'
+      },{
+        name: '组件间传值',
+        path: 'components'
+      }]
+    }
+  },
+  computed:{
+    routPath: function() {
+      return this.$route.path.split('/').pop()
     }
   }
 }
@@ -28,8 +39,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-$background: #eeac6a;
+$background: #fff;
 .wrap{
+  width: 100%;
+  height: 800px;
   background-color: $background;
   ul, li{
     margin: 0;
@@ -38,15 +51,37 @@ $background: #eeac6a;
   }
   ul{
     width: 150px;
+    li{
+      a{
+        &:link{
+          text-decoration: none;
+        }
+        
+        &:visited{
+          color: #000;
+          text-decoration: none;
+        }
+        &:hover{
+          color: #48b884;
+          text-decoration: underline;
+        }
+      }
+    }
   }
   .tab_bar{
     float: left;
     border: 1px solid #ccc;
     margin-left: 10px;
+    .nav-color{
+      a{
+        color: #48b884;
+      }
+    }
   }
   .content{
     float: left;
     margin-left: 10px;
+    background-color: #fff;
   }
 }
 </style>

@@ -18,5 +18,10 @@ export default {
   /* text-align: center; */
   color: #2c3e50;
   /* margin-top: 60px; */
+  
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  padding: 0;
 }
 </style>

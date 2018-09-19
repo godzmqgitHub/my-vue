@@ -2,7 +2,9 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import HiddenFile from '@/components/HiddenFile'
-import Foo from '@/components/foo'
+import Foo from '@/components/Foo'
+import Components from '@/components/Component'
+import Computed from '@/components/Computed'
 
 Vue.use(Router)
 
@@ -20,11 +22,14 @@ export default new Router({
         name: 'Foo',
         component: Foo
       }, {
-        path: 'bar',
-        name: 'Bar',
-        component: Foo
-      }
-      ]
+        path: 'components',
+        name: 'Components',
+        component: Components
+      }, {
+          path: 'computed',
+          name: 'Computed',
+          component: Computed
+      }]
     },{
       path: '/HelloWorld',
       name: 'HelloWorld',
