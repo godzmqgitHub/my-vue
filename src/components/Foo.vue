@@ -1,6 +1,6 @@
 <template>
     <div class="wrap">
-      <h3>引入scss</h3>
+      <h3>引入scss(vue-cli)</h3>
       <p>
         不需要配置任何东西，直接在style标签添加  lang="scss"  就可以使用；
       </p>
@@ -12,6 +12,8 @@
       <p>
         在data内没有数据时，也加上return；
       </p>
+      <h4>发现</h4>
+      <p>在编写代码时发现重新保存后不会刷新页面，但是会改变代码逻辑，具体原因有待调查</p>
     </div>
 </template>
 

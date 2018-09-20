@@ -1,21 +1,16 @@
 <template>
     <div class="block">
-        <!-- 为什么要emit一个input事件 -->
-        <!-- 
-            <myInput v-model="myInputValue"></myInput>  => 简写 =>
-            <myInput :value="myInputValue" @input="myInputValue = arguments[0]"></myInput> 
-        -->
-         <input type="text" :value="value" @input="$emit('input', $event.target.value)">
+        <h4>我是子组件</h4>
+        <slot></slot>
+        <slot name="zhang"></slot>
     </div>
 </template>
 
 <script>
 export default {
-  name: 'my-input',
-  props: ['value'], // 为什么要用value属性
+  name: 'slotModel',
   data () {
     return {
-        text: '双向绑定'
     }
   },
   methods: {

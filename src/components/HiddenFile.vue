@@ -42,8 +42,10 @@ export default {
 $background: #fff;
 .wrap{
   width: 100%;
+  min-width: 900px;
   height: 800px;
   background-color: $background;
+  
   ul, li{
     margin: 0;
     padding: 0;
@@ -52,6 +54,7 @@ $background: #fff;
   ul{
     width: 150px;
     li{
+      text-align: center;
       a{
         &:link{
           text-decoration: none;
@@ -70,8 +73,9 @@ $background: #fff;
   }
   .tab_bar{
     float: left;
-    border: 1px solid #ccc;
+    // border: 1px solid #ccc;
     margin-left: 10px;
+    margin-top: 30px;
     .nav-color{
       a{
         color: #48b884;
@@ -79,8 +83,9 @@ $background: #fff;
     }
   }
   .content{
+    width: 80%;
     float: left;
-    margin-left: 10px;
+    margin: 15px 20px;
     background-color: #fff;
   }
 }
