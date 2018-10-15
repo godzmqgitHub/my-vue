@@ -21,12 +21,15 @@ export default {
   },
   methods: {
       cli1: function() {
-        Toast('提示信息');
+        
         this.$axios.post("/api/login", {
           username: 'admin',
           password: '123456'
         }).then((res) => {
           console.log(res);
+          if (res.data.returnCode === 0) {
+            Toast('请求成功');
+          }
         })
       }
   }
