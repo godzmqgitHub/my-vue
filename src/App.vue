@@ -12,13 +12,17 @@ export default {
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  /* font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* text-align: center; */
+  text-align: center;
   color: #2c3e50;
+  height: 100%; */
   /* margin-top: 60px; */
   
+}
+html, body{
+  height: 100%;
 }
 h1,h2,h3,h4,h5,h6{
   margin: 0;

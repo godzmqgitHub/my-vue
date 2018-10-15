@@ -13,9 +13,11 @@ function resolve (dir) {
 
 module.exports = {
   context: path.resolve(__dirname, '../'),
+  // 入口文件
   entry: {
     app: './src/main.js'
   },
+  // 输出
   output: {
     path: config.build.assetsRoot,
     filename: '[name].js',
@@ -27,7 +29,7 @@ module.exports = {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      '@': resolve('src'),
+      '@': resolve('src')
     }
   },
   module: {

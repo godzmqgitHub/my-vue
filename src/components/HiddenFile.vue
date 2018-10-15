@@ -26,6 +26,9 @@ export default {
       },{
         name: '组件间传值',
         path: 'components'
+      },{
+        name: 'axios调用',
+        path: 'axiosExample'
       }]
     }
   },
@@ -58,6 +61,7 @@ $background: #fff;
       a{
         &:link{
           text-decoration: none;
+          color: #000;
         }
         
         &:visited{

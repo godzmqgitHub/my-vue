@@ -9,6 +9,15 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const portfinder = require('portfinder')
+// const express = require('express')
+// let app = express()
+// let fs = require('fs')
+// let cwd = process.cwd();
+// let basePath = path.join(cwd, 'static', 'mock');
+
+// let appData = require('../static/mock/login.json');
+// let router = express.Router();
+// app.use('/api', router);
 
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
@@ -42,7 +51,21 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     quiet: true, // necessary for FriendlyErrorsPlugin
     watchOptions: {
       poll: config.dev.poll,
-    }
+    },
+    // before(app) {
+    //   app.post('/api/appData', (req, res) => {
+    //     res.json({
+    //       error: 0,
+    //       data: appData
+    //     })
+    //   });
+    // }
+    // before(app) {
+    //   app.post('*.json', function (req, res) {
+    //     res.json(JSON.parse(fs.readFileSync(path.join(basePath, req.url), 'utf8')))
+    //     res.end()
+    //   })
+    // }
   },
   plugins: [
     new webpack.DefinePlugin({
