@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <div class="imgWrap">
-      <img src="https://mmbiz.qpic.cn/mmbiz_jpg/v7frark9N0xARxaibVw7mWl4kcZ4Fb2RBCENic4xPMj9S7njmcYhRXND3pueTxf1RKicEq9ezyicUAOmibG0V6RjnnA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1">
+      <img src="../assets/timg.jpeg">
     </div>
     <h1>{{ msg }}</h1>
     <h2>

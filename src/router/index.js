@@ -47,7 +47,7 @@ export default new Router({
       component: HelloWorld
     },{
       path: '/*',
-      redirect: '/HelloWorld'
+      redirect: '/login'
     }
   ]
 })
