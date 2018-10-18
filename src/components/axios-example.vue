@@ -1,9 +1,11 @@
 <template>
     <div class="wrap">
         <h3>Axios</h3>
-        <div class="item" @click="cli1">
-          123123
-            <!-- <mt-button type="primary" @click="cli1">点击</mt-button> -->
+        <div class="item">
+            <mt-button type="primary" @click="cli1">点击</mt-button>
+        </div>
+        <div>
+          
         </div>
     </div>
 </template>
