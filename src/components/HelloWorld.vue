@@ -20,6 +20,9 @@ export default {
       msg: 'Welcome to my Vue.js\'s App',
       app: 'zhang'
     }
+  },
+  mounted(){
+    console.log(222);
   }
 }
 </script>

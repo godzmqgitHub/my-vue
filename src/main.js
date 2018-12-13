@@ -5,7 +5,7 @@ import Vue from 'vue'
 import router from './router'
 import axios from 'axios'
 // import fetchPost from '@/config/axiosConfig'
-import Mint from 'mint-ui';
+import Mint from 'mint-ui'
 import App from './App'
 import store from './store/index'
 

@@ -36,9 +36,8 @@ export default {
     ]),
 
     validclick() {
-      console.log(123);
       if (!this.username.length) {
-        Toast('请输入账户名');
+        Toast('请输入账号');
         return;
       }
       if (!this.password.length) {

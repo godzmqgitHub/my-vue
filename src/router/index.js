@@ -7,6 +7,7 @@ import Components from '@/components/Component'
 import Computed from '@/components/Computed'
 import AxiosExample from '@/components/axios-example'
 import Login from '@/components/login'
+import Splendid from '@/components/splendid'
 
 Vue.use(Router)
 
@@ -45,6 +46,10 @@ export default new Router({
       path: '/HelloWorld',
       name: 'HelloWorld',
       component: HelloWorld
+    },{
+      path: '/3D',
+      name: '3D',
+      component: Splendid
     },{
       path: '/*',
       redirect: '/login'
