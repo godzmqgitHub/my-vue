@@ -1,6 +1,7 @@
 <template>
     <div class="block" :class="{'red': colorBool}" @click="changeColor">
          <div>{{content}}</div>
+         
     </div>
 </template>
 
@@ -18,6 +19,7 @@ export default {
   methods: {
       changeColor: function() {
           this.colorBool = !this.colorBool;
+          this.obj.key = '456';
           this.$emit('string', this.str);
       }
   }

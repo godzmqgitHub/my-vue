@@ -9,6 +9,7 @@
         Essential Links
       </router-link>
     </h2>
+    <div>{{obj.a1}}</div>
   </div>
 </template>
 
@@ -18,10 +19,14 @@ export default {
   data () {
     return {
       msg: 'Welcome to my Vue.js\'s App',
-      app: 'zhang'
+      app: 'zhang',
+      obj: {
+        test: 1
+      }
     }
   },
   mounted(){
+    this.obj.a1 = 1;
     console.log(222);
   }
 }

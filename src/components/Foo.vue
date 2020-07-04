@@ -16,6 +16,8 @@
       <p>在编写代码时发现重新保存后不会刷新页面，但是会改变代码逻辑，具体原因有待调查</p>
       <h4>mint-UI</h4>
       <div>引入<a href="https://www.cnblogs.com/stella1024/p/7771334.html">Mint-UI</a></div>
+      <div>{{abc}}</div>
+      <div v-for="(item, value) in data1">{{value}}</div>
     </div>
 </template>
 
@@ -24,8 +26,15 @@ export default {
   name: 'Foo',
   data () {
     return {
-      
+      abc: 123,
+      data1: {
+        a: [1],
+        b: [2],
+        c: [3]
+      }
     }
+  },
+  mounted () {
   }
 }
 </script>

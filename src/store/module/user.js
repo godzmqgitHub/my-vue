@@ -1,4 +1,4 @@
-import axios from "axios";
+// import axios from "axios";
 
 export default {
     state: {
@@ -13,7 +13,7 @@ export default {
     actions: {
         handleLogin({commit},data) {
             this.state.username = data.username;
-            return axios.post("/api/login", data);
+            return this.$post("loginApi", data);
         }
     }
 }

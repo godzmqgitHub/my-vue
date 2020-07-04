@@ -3,7 +3,7 @@
 <div class="wrap">
   <ul class="tab_bar">
     <li v-for="item in routList" :class="{'nav-color': routPath===item.path}">
-      <router-link :to="item.path">{{item.name}}</router-link>
+      <router-link :to="'/hiddenfile/' + item.path">{{item.name}}</router-link>
     </li>
   </ul>
   <div class="content">

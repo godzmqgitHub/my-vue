@@ -23,9 +23,6 @@ export default new Router({
       name: 'HiddenFile',
       component: HiddenFile,
       children: [{
-          path: '',
-          redirect: 'foo'
-      }, {
         path: 'foo',
         name: 'Foo',
         component: Foo

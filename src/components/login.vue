@@ -51,12 +51,15 @@ export default {
         username: this.username,
         password: this.password
       }
-      this.handleLogin(data).then((res) => {
-        Toast(res.data.returnMassage);
-        if (res.data.returnCode === 0) {
+      this.$get("loginApi", data)
+      // this.handleLogin(data)
+      .then((res) => {
+        Toast(res.error.returnUserMessage);
+        if (res.error.returnCode === 0) {
           this.$router.push({path: '/HelloWorld'});
         }
       })
+      
     }
   }
 }

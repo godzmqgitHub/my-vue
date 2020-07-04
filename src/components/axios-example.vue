@@ -23,8 +23,7 @@ export default {
   },
   methods: {
       cli1: function() {
-        
-        this.$axios.post("/api/login", {
+        this.$post("loginApi", {
           username: 'admin',
           password: '123456'
         }).then((res) => {
@@ -32,6 +31,9 @@ export default {
           if (res.data.returnCode === 0) {
             Toast('请求成功');
           }
+        })
+        .catch((e) => {
+          this.$throw(e)
         })
       }
   }
